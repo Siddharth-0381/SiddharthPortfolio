@@ -10,6 +10,23 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
+    
+<script type="text/javascript">
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "sender@email_address.com",
+        Password: "Enter your password",
+        To: 'receiver@email_address.com',
+        From: "sender@email_address.com",
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+    }
+</script>
 
 <body>
 <!-- Navbar  Section Start -->
@@ -66,22 +83,6 @@
                 <b>Rosary School, Pune</b> and my higher secondary education form <b>Arihant College of Arts, 
                 Commerce and Science, Pune.</b> <br> Currently, I am pursuing my B.Tech degree in Computer Science
                 from <b>MIT Academy of Engineering, Alandi, Pune</b>.</p>
-            <div class="information">
-                <div class="info-box">
-                    <i class='bx bxs-user'></i>
-                    <span>Siddharth Prashant Kanikdale</span>
-                </div>
-
-                <div class="info-box">
-                    <i class='bx bxs-phone'></i>
-                    <span>+91 90969 95331</span>
-                </div>
-
-                <div class="info-box">
-                    <i class='bx bxs-envelope'></i>
-                    <span>kanikdalesp@gmail.com</span>
-                </div>
-            </div>
             <a href="images/SIDDHARTH  PRASHANT KANIKDALE.pdf" class="btn">Download Cv</a>
         </div>
     </div>
@@ -234,13 +235,22 @@
         <h2>Contact Me</h2>
     </div>
     <div class="contact-form">
-        <form action="">
-            <input type="text" placeholder="Your Name">
-            <input type="email" name="" id="" placeholder="Your Email">
-            <textare name="" id="" cols="30" rows="10" placeholder="Write Message Here..."></textare>
-                                <input type="button" value="Send" class="contact-button" href="kanikdaleS03@gmail.com">
-                                </form>
-                            </div>
+        <div class="information">
+                <div class="info-box">
+                    <i class='bx bxs-user'></i>
+                    <span>Siddharth Prashant Kanikdale</span>
+                </div>
+
+                <div class="info-box">
+                    <i class='bx bxs-phone'></i>
+                    <span>+91 90969 95331</span>
+                </div>
+
+                <div class="info-box">
+                    <i class='bx bxs-envelope'></i>
+                    <span>kanikdalesp@gmail.com</span>
+                </div>
+            </div>
                             </section>
                             <!-- Contact Section End -->
                          <div class="footer">
